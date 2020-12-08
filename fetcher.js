@@ -12,7 +12,7 @@ request(url, (error, response, body) => {
       const stats = fs.statSync(saveLocation);
       console.log(`Downloaded and saved ${stats.size} bytes to ${saveLocation}`);
     }
-  })
+  });
 });
 
 //More on fs.statSync(path[, options]): https://nodejs.org/api/fs.html#fs_fs_statsync_path_options
